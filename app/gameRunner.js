@@ -1,3 +1,5 @@
+var runnerFunctions = require("./runnerFunctions");
+
 module.exports.Game = function() {
   var players          = new Array();
   var places           = new Array(6);
@@ -16,24 +18,6 @@ module.exports.Game = function() {
     return !(purses[currentPlayer] == 6)
   };
 
-  var currentCategory = function(){
-    switch (places[currentPlayer]) {
-    case 0:
-    case 4:
-    case 8:
-        return 'Pop';
-    case 1:
-    case 5:
-    case 9:
-        return 'Science';
-    case 2:
-    case 6:
-    case 10:
-        return 'Sports';
-    default:
-        return 'Rock';
-}
-  };
 
   for(var i = 0; i < 50; i++){
     popQuestions.push("Pop Question "+i);
@@ -64,13 +48,13 @@ module.exports.Game = function() {
 
 
   var askQuestion = function(){
-    if(currentCategory() == 'Pop')
+    if(runnerFunctions.currentCategory(places[currentPlayer]) == 'Pop')
       console.log(popQuestions.shift());
-    if(currentCategory() == 'Science')
+    if(runnerFunctions.currentCategory(places[currentPlayer]) == 'Science')
       console.log(scienceQuestions.shift());
-    if(currentCategory() == 'Sports')
+    if(runnerFunctions.currentCategory(places[currentPlayer]) == 'Sports')
       console.log(sportsQuestions.shift());
-    if(currentCategory() == 'Rock')
+    if(runnerFunctions.currentCategory(places[currentPlayer]) == 'Rock')
       console.log(rockQuestions.shift());
   };
 
@@ -89,7 +73,7 @@ module.exports.Game = function() {
         }
 
         console.log(players[currentPlayer] + "'s new location is " + places[currentPlayer]);
-        console.log("The category is " + currentCategory());
+        console.log("The category is " + runnerFunctions.currentCategory(places[currentPlayer]));
         askQuestion();
       }else{
         console.log(players[currentPlayer] + " is not getting out of the penalty box");
@@ -103,7 +87,7 @@ module.exports.Game = function() {
       }
 
       console.log(players[currentPlayer] + "'s new location is " + places[currentPlayer]);
-      console.log("The category is " + currentCategory());
+      console.log("The category is " + runnerFunctions.currentCategory(places[currentPlayer]));
       askQuestion();
     }
   };

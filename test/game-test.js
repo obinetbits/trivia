@@ -1,5 +1,5 @@
 var expect = require('expect');
-var app = require('../game.js');
+var app = require('../app/game.js');
 //var Game = require('../gameRunner');
 
 describe('App', function(){

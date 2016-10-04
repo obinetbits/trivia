@@ -1,5 +1,5 @@
 var expect = require('expect');
-var gameRunner = require('../gameRunner');
+var gameRunner = require('../app/gameRunner');
 
 describe('gameRunner', function(){
     it('should exist', function(){
