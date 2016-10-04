@@ -1,0 +1,19 @@
+{
+  "name": "trivia",
+  "version": "1.0.0",
+  "description": "Trivia Game",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obinetbits/trivia.git"
+  },
+  "author": "Ifeanyi Obiano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/obinetbits/trivia/issues"
+  },
+  "homepage": "https://github.com/obinetbits/trivia#readme"
+}
