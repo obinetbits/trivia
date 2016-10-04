@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/obinetbits/trivia/issues"
   },
-  "homepage": "https://github.com/obinetbits/trivia#readme"
+  "homepage": "https://github.com/obinetbits/trivia#readme",
+  "devDependencies": {}
 }

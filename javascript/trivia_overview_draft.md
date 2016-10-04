@@ -1,0 +1,15 @@
+#Observation from output: How trivia is works
+- three players are added; Chet,Pat and Sue
+- unique number is asigned to each player
+- current player is set
+- a dice is rolled for current player
+- a location is set for current player
+- a category is selected
+- a question is selected
+- an answer is selected (most likely)
+- answer is verified
+- correct answer gives player gold
+- wrong anwser sends player to penality box
+- while the game is on, it loops through players
+- player can get out of penality box
+- player with most gold wins(most likely)
