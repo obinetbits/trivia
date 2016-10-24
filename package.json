@@ -4,8 +4,31 @@
   "description": "Trivia Game",
   "main": "game.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ifeanyi Obiano",
   "license": "ISC"
+=======
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "start": "node game.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obinetbits/trivia.git"
+  },
+  "author": "Ifeanyi Obiano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/obinetbits/trivia/issues"
+  },
+  "homepage": "https://github.com/obinetbits/trivia#readme",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "chai": "^3.5.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.1.0",
+    "sinon": "^1.17.6"
+  }
+>>>>>>> 5444f79b5fae5d1d7ce2ceda8d29e77104c1a918
 }
